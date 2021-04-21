@@ -1,0 +1,866 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0917733C5C1F1D5999D1C8BD /* Pods_GistAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F0B4C96AB7B54D49EFA8EC0 /* Pods_GistAppTests.framework */; };
+		2B782BCFD7A8FB4C566C9B23 /* Pods_GistApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FBB02D1A86C4C76F77249FA /* Pods_GistApp.framework */; };
+		528E855873CE95E5463ED094 /* Pods_GistApp_GistAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13AF0E3C77A3D2F1B34951EA /* Pods_GistApp_GistAppUITests.framework */; };
+		D14420EB262FC3CD00E56196 /* GistModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D14420EA262FC3CD00E56196 /* GistModel.swift */; };
+		D14420ED262FCAFC00E56196 /* GistRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = D14420EC262FCAFC00E56196 /* GistRepository.swift */; };
+		D14420EF262FD17100E56196 /* FileModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D14420EE262FD17100E56196 /* FileModel.swift */; };
+		D18A002B262FACB200576DF7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D18A002A262FACB200576DF7 /* AppDelegate.swift */; };
+		D18A002D262FACB200576DF7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D18A002C262FACB200576DF7 /* SceneDelegate.swift */; };
+		D18A002F262FACB200576DF7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D18A002E262FACB200576DF7 /* ViewController.swift */; };
+		D18A0032262FACB200576DF7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D18A0030262FACB200576DF7 /* Main.storyboard */; };
+		D18A0035262FACB200576DF7 /* GistApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D18A0033262FACB200576DF7 /* GistApp.xcdatamodeld */; };
+		D18A0037262FACB400576DF7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D18A0036262FACB400576DF7 /* Assets.xcassets */; };
+		D18A003A262FACB400576DF7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D18A0038262FACB400576DF7 /* LaunchScreen.storyboard */; };
+		D18A0045262FACB400576DF7 /* GistAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D18A0044262FACB400576DF7 /* GistAppTests.swift */; };
+		D18A0050262FACB400576DF7 /* GistAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D18A004F262FACB400576DF7 /* GistAppUITests.swift */; };
+		D18A006F262FBA5D00576DF7 /* Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = D18A006E262FBA5D00576DF7 /* Api.swift */; };
+		D18A0074262FBE9A00576DF7 /* GistApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = D18A0073262FBE9A00576DF7 /* GistApi.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D18A0041262FACB400576DF7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D18A001F262FACB200576DF7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D18A0026262FACB200576DF7;
+			remoteInfo = GistApp;
+		};
+		D18A004C262FACB400576DF7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D18A001F262FACB200576DF7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D18A0026262FACB200576DF7;
+			remoteInfo = GistApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		136A93748D5970036278625E /* Pods-GistApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GistApp.release.xcconfig"; path = "Target Support Files/Pods-GistApp/Pods-GistApp.release.xcconfig"; sourceTree = "<group>"; };
+		13AF0E3C77A3D2F1B34951EA /* Pods_GistApp_GistAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GistApp_GistAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4BF3981A9F365728E2ADD5F7 /* Pods-GistApp-GistAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GistApp-GistAppUITests.debug.xcconfig"; path = "Target Support Files/Pods-GistApp-GistAppUITests/Pods-GistApp-GistAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		4F0B4C96AB7B54D49EFA8EC0 /* Pods_GistAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GistAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5723358AC8A5139496A4CE89 /* Pods-GistAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GistAppTests.debug.xcconfig"; path = "Target Support Files/Pods-GistAppTests/Pods-GistAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		7FBB02D1A86C4C76F77249FA /* Pods_GistApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GistApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		85F6D1CAEAD9D2EC1BACD92A /* Pods-GistApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GistApp.debug.xcconfig"; path = "Target Support Files/Pods-GistApp/Pods-GistApp.debug.xcconfig"; sourceTree = "<group>"; };
+		CACA9AC37F1D4DEE98792120 /* Pods-GistAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GistAppTests.release.xcconfig"; path = "Target Support Files/Pods-GistAppTests/Pods-GistAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		D14420EA262FC3CD00E56196 /* GistModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GistModel.swift; sourceTree = "<group>"; };
+		D14420EC262FCAFC00E56196 /* GistRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GistRepository.swift; sourceTree = "<group>"; };
+		D14420EE262FD17100E56196 /* FileModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileModel.swift; sourceTree = "<group>"; };
+		D18A0027262FACB200576DF7 /* GistApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GistApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D18A002A262FACB200576DF7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D18A002C262FACB200576DF7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		D18A002E262FACB200576DF7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D18A0031262FACB200576DF7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D18A0034262FACB200576DF7 /* GistApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = GistApp.xcdatamodel; sourceTree = "<group>"; };
+		D18A0036262FACB400576DF7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D18A0039262FACB400576DF7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D18A003B262FACB400576DF7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D18A0040262FACB400576DF7 /* GistAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GistAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D18A0044262FACB400576DF7 /* GistAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GistAppTests.swift; sourceTree = "<group>"; };
+		D18A0046262FACB400576DF7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D18A004B262FACB400576DF7 /* GistAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GistAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D18A004F262FACB400576DF7 /* GistAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GistAppUITests.swift; sourceTree = "<group>"; };
+		D18A0051262FACB400576DF7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D18A006E262FBA5D00576DF7 /* Api.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Api.swift; sourceTree = "<group>"; };
+		D18A0073262FBE9A00576DF7 /* GistApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GistApi.swift; sourceTree = "<group>"; };
+		F0D346C9F19750E2404FB7D5 /* Pods-GistApp-GistAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GistApp-GistAppUITests.release.xcconfig"; path = "Target Support Files/Pods-GistApp-GistAppUITests/Pods-GistApp-GistAppUITests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D18A0024262FACB200576DF7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B782BCFD7A8FB4C566C9B23 /* Pods_GistApp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D18A003D262FACB400576DF7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0917733C5C1F1D5999D1C8BD /* Pods_GistAppTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D18A0048262FACB400576DF7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				528E855873CE95E5463ED094 /* Pods_GistApp_GistAppUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B753EA2A04052444295EEFDB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				85F6D1CAEAD9D2EC1BACD92A /* Pods-GistApp.debug.xcconfig */,
+				136A93748D5970036278625E /* Pods-GistApp.release.xcconfig */,
+				4BF3981A9F365728E2ADD5F7 /* Pods-GistApp-GistAppUITests.debug.xcconfig */,
+				F0D346C9F19750E2404FB7D5 /* Pods-GistApp-GistAppUITests.release.xcconfig */,
+				5723358AC8A5139496A4CE89 /* Pods-GistAppTests.debug.xcconfig */,
+				CACA9AC37F1D4DEE98792120 /* Pods-GistAppTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		D18A001E262FACB200576DF7 = {
+			isa = PBXGroup;
+			children = (
+				D18A0029262FACB200576DF7 /* GistApp */,
+				D18A0043262FACB400576DF7 /* GistAppTests */,
+				D18A004E262FACB400576DF7 /* GistAppUITests */,
+				D18A0028262FACB200576DF7 /* Products */,
+				B753EA2A04052444295EEFDB /* Pods */,
+				FC065EC31B43F2EBCCB8AF60 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D18A0028262FACB200576DF7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D18A0027262FACB200576DF7 /* GistApp.app */,
+				D18A0040262FACB400576DF7 /* GistAppTests.xctest */,
+				D18A004B262FACB400576DF7 /* GistAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D18A0029262FACB200576DF7 /* GistApp */ = {
+			isa = PBXGroup;
+			children = (
+				D18A006D262FBA2900576DF7 /* Services */,
+				D18A0060262FB86600576DF7 /* Gists */,
+				D18A002A262FACB200576DF7 /* AppDelegate.swift */,
+				D18A002C262FACB200576DF7 /* SceneDelegate.swift */,
+				D18A002E262FACB200576DF7 /* ViewController.swift */,
+				D18A0030262FACB200576DF7 /* Main.storyboard */,
+				D18A0036262FACB400576DF7 /* Assets.xcassets */,
+				D18A0038262FACB400576DF7 /* LaunchScreen.storyboard */,
+				D18A003B262FACB400576DF7 /* Info.plist */,
+				D18A0033262FACB200576DF7 /* GistApp.xcdatamodeld */,
+			);
+			path = GistApp;
+			sourceTree = "<group>";
+		};
+		D18A0043262FACB400576DF7 /* GistAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				D18A0044262FACB400576DF7 /* GistAppTests.swift */,
+				D18A0046262FACB400576DF7 /* Info.plist */,
+			);
+			path = GistAppTests;
+			sourceTree = "<group>";
+		};
+		D18A004E262FACB400576DF7 /* GistAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D18A004F262FACB400576DF7 /* GistAppUITests.swift */,
+				D18A0051262FACB400576DF7 /* Info.plist */,
+			);
+			path = GistAppUITests;
+			sourceTree = "<group>";
+		};
+		D18A0060262FB86600576DF7 /* Gists */ = {
+			isa = PBXGroup;
+			children = (
+				D18A006C262FB98500576DF7 /* Api */,
+				D18A0063262FB8AD00576DF7 /* Model */,
+				D18A0061262FB87900576DF7 /* QrCode */,
+				D18A0062262FB88500576DF7 /* AllGists */,
+			);
+			path = Gists;
+			sourceTree = "<group>";
+		};
+		D18A0061262FB87900576DF7 /* QrCode */ = {
+			isa = PBXGroup;
+			children = (
+				D18A0064262FB8B400576DF7 /* View */,
+				D18A0065262FB8BE00576DF7 /* Controller */,
+			);
+			path = QrCode;
+			sourceTree = "<group>";
+		};
+		D18A0062262FB88500576DF7 /* AllGists */ = {
+			isa = PBXGroup;
+			children = (
+				D18A0067262FB8DE00576DF7 /* View */,
+				D18A0066262FB8D700576DF7 /* Controller */,
+			);
+			path = AllGists;
+			sourceTree = "<group>";
+		};
+		D18A0063262FB8AD00576DF7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D14420EA262FC3CD00E56196 /* GistModel.swift */,
+				D14420EE262FD17100E56196 /* FileModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D18A0064262FB8B400576DF7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D18A0065262FB8BE00576DF7 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		D18A0066262FB8D700576DF7 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		D18A0067262FB8DE00576DF7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D18A006C262FB98500576DF7 /* Api */ = {
+			isa = PBXGroup;
+			children = (
+				D18A0073262FBE9A00576DF7 /* GistApi.swift */,
+				D14420EC262FCAFC00E56196 /* GistRepository.swift */,
+			);
+			path = Api;
+			sourceTree = "<group>";
+		};
+		D18A006D262FBA2900576DF7 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				D18A006E262FBA5D00576DF7 /* Api.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		FC065EC31B43F2EBCCB8AF60 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7FBB02D1A86C4C76F77249FA /* Pods_GistApp.framework */,
+				13AF0E3C77A3D2F1B34951EA /* Pods_GistApp_GistAppUITests.framework */,
+				4F0B4C96AB7B54D49EFA8EC0 /* Pods_GistAppTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D18A0026262FACB200576DF7 /* GistApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D18A0054262FACB400576DF7 /* Build configuration list for PBXNativeTarget "GistApp" */;
+			buildPhases = (
+				FAD6DC7475507B4BEE24B4AD /* [CP] Check Pods Manifest.lock */,
+				D18A0023262FACB200576DF7 /* Sources */,
+				D18A0024262FACB200576DF7 /* Frameworks */,
+				D18A0025262FACB200576DF7 /* Resources */,
+				515C3857E68B8E03E8DCE4E1 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GistApp;
+			productName = GistApp;
+			productReference = D18A0027262FACB200576DF7 /* GistApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D18A003F262FACB400576DF7 /* GistAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D18A0057262FACB400576DF7 /* Build configuration list for PBXNativeTarget "GistAppTests" */;
+			buildPhases = (
+				5BBDE412DDCF77D03802DCA9 /* [CP] Check Pods Manifest.lock */,
+				D18A003C262FACB400576DF7 /* Sources */,
+				D18A003D262FACB400576DF7 /* Frameworks */,
+				D18A003E262FACB400576DF7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D18A0042262FACB400576DF7 /* PBXTargetDependency */,
+			);
+			name = GistAppTests;
+			productName = GistAppTests;
+			productReference = D18A0040262FACB400576DF7 /* GistAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D18A004A262FACB400576DF7 /* GistAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D18A005A262FACB400576DF7 /* Build configuration list for PBXNativeTarget "GistAppUITests" */;
+			buildPhases = (
+				7CEC4E3251977D0286B6D2A1 /* [CP] Check Pods Manifest.lock */,
+				D18A0047262FACB400576DF7 /* Sources */,
+				D18A0048262FACB400576DF7 /* Frameworks */,
+				D18A0049262FACB400576DF7 /* Resources */,
+				5A21A41B5F5DEA508CF8318F /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D18A004D262FACB400576DF7 /* PBXTargetDependency */,
+			);
+			name = GistAppUITests;
+			productName = GistAppUITests;
+			productReference = D18A004B262FACB400576DF7 /* GistAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D18A001F262FACB200576DF7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = ArjMaster;
+				TargetAttributes = {
+					D18A0026262FACB200576DF7 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					D18A003F262FACB400576DF7 = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = D18A0026262FACB200576DF7;
+					};
+					D18A004A262FACB400576DF7 = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = D18A0026262FACB200576DF7;
+					};
+				};
+			};
+			buildConfigurationList = D18A0022262FACB200576DF7 /* Build configuration list for PBXProject "GistApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D18A001E262FACB200576DF7;
+			productRefGroup = D18A0028262FACB200576DF7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D18A0026262FACB200576DF7 /* GistApp */,
+				D18A003F262FACB400576DF7 /* GistAppTests */,
+				D18A004A262FACB400576DF7 /* GistAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D18A0025262FACB200576DF7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D18A003A262FACB400576DF7 /* LaunchScreen.storyboard in Resources */,
+				D18A0037262FACB400576DF7 /* Assets.xcassets in Resources */,
+				D18A0032262FACB200576DF7 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D18A003E262FACB400576DF7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D18A0049262FACB400576DF7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		515C3857E68B8E03E8DCE4E1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GistApp/Pods-GistApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GistApp/Pods-GistApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GistApp/Pods-GistApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5A21A41B5F5DEA508CF8318F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GistApp-GistAppUITests/Pods-GistApp-GistAppUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GistApp-GistAppUITests/Pods-GistApp-GistAppUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GistApp-GistAppUITests/Pods-GistApp-GistAppUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5BBDE412DDCF77D03802DCA9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GistAppTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7CEC4E3251977D0286B6D2A1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GistApp-GistAppUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FAD6DC7475507B4BEE24B4AD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GistApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D18A0023262FACB200576DF7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D18A0074262FBE9A00576DF7 /* GistApi.swift in Sources */,
+				D14420EF262FD17100E56196 /* FileModel.swift in Sources */,
+				D18A006F262FBA5D00576DF7 /* Api.swift in Sources */,
+				D18A0035262FACB200576DF7 /* GistApp.xcdatamodeld in Sources */,
+				D18A002F262FACB200576DF7 /* ViewController.swift in Sources */,
+				D14420EB262FC3CD00E56196 /* GistModel.swift in Sources */,
+				D18A002B262FACB200576DF7 /* AppDelegate.swift in Sources */,
+				D14420ED262FCAFC00E56196 /* GistRepository.swift in Sources */,
+				D18A002D262FACB200576DF7 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D18A003C262FACB400576DF7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D18A0045262FACB400576DF7 /* GistAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D18A0047262FACB400576DF7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D18A0050262FACB400576DF7 /* GistAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D18A0042262FACB400576DF7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D18A0026262FACB200576DF7 /* GistApp */;
+			targetProxy = D18A0041262FACB400576DF7 /* PBXContainerItemProxy */;
+		};
+		D18A004D262FACB400576DF7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D18A0026262FACB200576DF7 /* GistApp */;
+			targetProxy = D18A004C262FACB400576DF7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D18A0030262FACB200576DF7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D18A0031262FACB200576DF7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D18A0038262FACB400576DF7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D18A0039262FACB400576DF7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D18A0052262FACB400576DF7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D18A0053262FACB400576DF7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D18A0055262FACB400576DF7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 85F6D1CAEAD9D2EC1BACD92A /* Pods-GistApp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VP82G3HGX6;
+				INFOPLIST_FILE = GistApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = arjmaster.GistApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D18A0056262FACB400576DF7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 136A93748D5970036278625E /* Pods-GistApp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VP82G3HGX6;
+				INFOPLIST_FILE = GistApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = arjmaster.GistApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D18A0058262FACB400576DF7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5723358AC8A5139496A4CE89 /* Pods-GistAppTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VP82G3HGX6;
+				INFOPLIST_FILE = GistAppTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = arjmaster.GistAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GistApp.app/GistApp";
+			};
+			name = Debug;
+		};
+		D18A0059262FACB400576DF7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CACA9AC37F1D4DEE98792120 /* Pods-GistAppTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VP82G3HGX6;
+				INFOPLIST_FILE = GistAppTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = arjmaster.GistAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GistApp.app/GistApp";
+			};
+			name = Release;
+		};
+		D18A005B262FACB400576DF7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4BF3981A9F365728E2ADD5F7 /* Pods-GistApp-GistAppUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VP82G3HGX6;
+				INFOPLIST_FILE = GistAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = arjmaster.GistAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GistApp;
+			};
+			name = Debug;
+		};
+		D18A005C262FACB400576DF7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F0D346C9F19750E2404FB7D5 /* Pods-GistApp-GistAppUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VP82G3HGX6;
+				INFOPLIST_FILE = GistAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = arjmaster.GistAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GistApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D18A0022262FACB200576DF7 /* Build configuration list for PBXProject "GistApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D18A0052262FACB400576DF7 /* Debug */,
+				D18A0053262FACB400576DF7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D18A0054262FACB400576DF7 /* Build configuration list for PBXNativeTarget "GistApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D18A0055262FACB400576DF7 /* Debug */,
+				D18A0056262FACB400576DF7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D18A0057262FACB400576DF7 /* Build configuration list for PBXNativeTarget "GistAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D18A0058262FACB400576DF7 /* Debug */,
+				D18A0059262FACB400576DF7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D18A005A262FACB400576DF7 /* Build configuration list for PBXNativeTarget "GistAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D18A005B262FACB400576DF7 /* Debug */,
+				D18A005C262FACB400576DF7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		D18A0033262FACB200576DF7 /* GistApp.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				D18A0034262FACB200576DF7 /* GistApp.xcdatamodel */,
+			);
+			currentVersion = D18A0034262FACB200576DF7 /* GistApp.xcdatamodel */;
+			path = GistApp.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = D18A001F262FACB200576DF7 /* Project object */;
+}
