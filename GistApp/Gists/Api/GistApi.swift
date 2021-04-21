@@ -11,7 +11,7 @@ import UIKit
 import Alamofire
 
 class GistApi:NSObject {
-
+    
     // MARK: - attributes
     lazy var urlService:String = {
         guard let url = Api().getUrlService() else { return "" }
@@ -23,12 +23,12 @@ class GistApi:NSObject {
         guard let url = URL(string: urlService + "\(id)") else {return}
         
         let request = AF.request(url)
-
+        
         request.responseDecodable(of: GistModel.self) { (response) in
-          guard let gist = response.value else { return }
+            guard let gist = response.value else { print(response); return }
             completion(gist)
-       }
-
+        }
+        
     }
     
 }

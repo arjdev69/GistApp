@@ -13,3 +13,9 @@ struct FileModel: Codable {
     var language:String;
     var content:String;
 }
+
+struct OwnerModel: Codable {
+    var id:Int;
+    var login:String;
+    var avatar_url:String;
+}
