@@ -10,6 +10,7 @@ import UIKit
 
 class GistViewController: UIViewController {
     
+    
     var gistCaptured:GistModel!;
 
     //MARK: Outlets
@@ -17,12 +18,17 @@ class GistViewController: UIViewController {
     @IBOutlet weak var BoxLabels: UIView!
     @IBOutlet weak var OwnerLabel: UILabel!
     @IBOutlet weak var LanguageLabel: UILabel!
+    @IBOutlet weak var GistTextContent: UITextView!
     @IBOutlet weak var CloseViewButton: UIButton!
-
+    @IBOutlet weak var ListViewComments: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setupLayout()
         setLabelsView()
+        
+        self.ListViewComments.dataSource = self
+        self.ListViewComments.delegate = self
     }
     
     //MARK: Setup Layout
@@ -37,6 +43,7 @@ class GistViewController: UIViewController {
         ScreenTitle.text = String(gistCaptured.files[keyFile]!.filename).uppercased()
         OwnerLabel.text = gistCaptured.owner.login
         LanguageLabel.text = String(gistCaptured.files[keyFile]!.language)
+        GistTextContent.text = String(gistCaptured.files[keyFile]!.content)
     }
     
     //MARK: Actions
