@@ -18,6 +18,7 @@
 		D14420EF262FD17100E56196 /* AuxModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = D14420EE262FD17100E56196 /* AuxModels.swift */; };
 		D14664222631E5D1008BE762 /* CommentsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D14664212631E5D1008BE762 /* CommentsModel.swift */; };
 		D14664242632327D008BE762 /* CommentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D14664232632327D008BE762 /* CommentTableViewCell.swift */; };
+		D1466427263249C8008BE762 /* QrCodeExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1466426263249C8008BE762 /* QrCodeExtension.swift */; };
 		D14A0BD0263116D4003CA255 /* GistExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D14A0BCF263116D4003CA255 /* GistExtension.swift */; };
 		D18A002B262FACB200576DF7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D18A002A262FACB200576DF7 /* AppDelegate.swift */; };
 		D18A002D262FACB200576DF7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D18A002C262FACB200576DF7 /* SceneDelegate.swift */; };
@@ -65,6 +66,7 @@
 		D14420EE262FD17100E56196 /* AuxModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuxModels.swift; sourceTree = "<group>"; };
 		D14664212631E5D1008BE762 /* CommentsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsModel.swift; sourceTree = "<group>"; };
 		D14664232632327D008BE762 /* CommentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CommentTableViewCell.swift; path = GistApp/Gists/Api/CommentTableViewCell.swift; sourceTree = SOURCE_ROOT; };
+		D1466426263249C8008BE762 /* QrCodeExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QrCodeExtension.swift; sourceTree = "<group>"; };
 		D14A0BCF263116D4003CA255 /* GistExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GistExtension.swift; sourceTree = "<group>"; };
 		D18A0027262FACB200576DF7 /* GistApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GistApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D18A002A262FACB200576DF7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -160,6 +162,14 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		D1466425263249AB008BE762 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				D1466426263249C8008BE762 /* QrCodeExtension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 		D14A0BCE2631169A003CA255 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
@@ -240,6 +250,7 @@
 		D18A0061262FB87900576DF7 /* QrCode */ = {
 			isa = PBXGroup;
 			children = (
+				D1466425263249AB008BE762 /* Extension */,
 				D18A0064262FB8B400576DF7 /* View */,
 				D18A0065262FB8BE00576DF7 /* Controller */,
 			);
@@ -560,6 +571,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D1466427263249C8008BE762 /* QrCodeExtension.swift in Sources */,
 				D18A0074262FBE9A00576DF7 /* GistApi.swift in Sources */,
 				D13D0D1B2630AA93001A93C6 /* GistViewController.swift in Sources */,
 				D14420EF262FD17100E56196 /* AuxModels.swift in Sources */,
