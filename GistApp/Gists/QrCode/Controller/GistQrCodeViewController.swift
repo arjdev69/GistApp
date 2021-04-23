@@ -6,9 +6,13 @@
 //  Copyright © 2021 ArjMaster. All rights reserved.
 //
 
+import AVFoundation
 import UIKit
 
-class GistQrCodeViewController: UIViewController {
+class GistQrCodeViewController: UIViewController, AVCaptureMetadataOutputObjectsDelegate {
+    
+    var captureSession: AVCaptureSession!
+    var previewLayer: AVCaptureVideoPreviewLayer!
 
     @IBOutlet weak var BoxImage: UIView!
     @IBOutlet weak var ScanButton: UIButton!
@@ -43,6 +47,8 @@ class GistQrCodeViewController: UIViewController {
     
     //MARK: Actions
     @IBAction func ScanQrCode(_ sender: Any) {
-        getGistById()
+        if !startCapture() {
+            getGistById()
+        }
     }
 }
