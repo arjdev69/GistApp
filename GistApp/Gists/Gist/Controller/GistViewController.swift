@@ -43,9 +43,9 @@ class GistViewController: UIViewController {
     func setLabelsView(){
         let keyFile = Array(gistCaptured.files.keys)[0]
         
-        ScreenTitle.text = String(gistCaptured.files[keyFile]!.filename).uppercased()
+        ScreenTitle.text = String(gistCaptured.files[keyFile]!.filename ?? "").uppercased()
         OwnerLabel.text = gistCaptured.owner.login
-        LanguageLabel.text = String(gistCaptured.files[keyFile]!.language)
+        LanguageLabel.text = String(gistCaptured.files[keyFile]!.language ?? "")
         GistTextContent.text = String((gistCaptured.files[keyFile]?.content)!)
     }
     

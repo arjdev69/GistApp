@@ -29,4 +29,20 @@ class AllGistViewController: UIViewController {
             self.GistsListView.reloadData()
         }
     }
+    
+    func getGistById(id:String){
+        GistRepository().getGistById(id) { (data) in
+            self.navigateControllerView(dataGist: data)
+        }
+    }
+    
+    //MARK: Navigation
+    func navigateControllerView(dataGist:GistModel){
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let controller = storyboard.instantiateViewController(withIdentifier: "GistView") as! GistViewController
+        
+        controller.gistCaptured = dataGist
+        
+        self.navigationController?.pushViewController(controller, animated: true)
+    }
 }

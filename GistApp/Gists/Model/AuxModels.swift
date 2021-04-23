@@ -9,9 +9,9 @@
 import UIKit
 
 struct FileModel: Codable {
-    var filename:String;
-    var language:String;
-    var content:String;
+    var filename:String?;
+    var language:String?;
+    var content:String?;
 }
 
 struct Files: Codable {
