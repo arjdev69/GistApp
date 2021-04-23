@@ -31,5 +31,11 @@ class Utils: NSObject {
         view.layer.cornerRadius = CGFloat(radius);
         view.layer.masksToBounds = true
     }
+    
+    func loadImage(url: String, image:UIImageView) {
+        let imageUrl = URL(string: url)!
+        let imageData = try! Data(contentsOf: imageUrl)
+        image.image = UIImage(data: imageData)
+    }
 
 }

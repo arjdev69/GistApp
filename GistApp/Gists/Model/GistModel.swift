@@ -8,7 +8,7 @@
 
 import UIKit
 
-struct GistModel: Decodable {
+struct GistModel: Codable {
     let id:String;
     
     let files:[String:FileModel];
@@ -19,11 +19,10 @@ struct GistModel: Decodable {
     let owner:UserModel
 }
 
-struct GistList: Decodable {
-    let all: [GistModel]
-    
-    enum CodingKeys: String, CodingKey {
-        case all
-    }
+struct AllGistModel: Codable {
+    let id:String;
+    let files:[String:Files];
+    let description:String?;
+    let comments_url:String;
+    let owner:UserModel
 }
-

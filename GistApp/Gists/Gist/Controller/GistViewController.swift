@@ -46,7 +46,7 @@ class GistViewController: UIViewController {
         ScreenTitle.text = String(gistCaptured.files[keyFile]!.filename).uppercased()
         OwnerLabel.text = gistCaptured.owner.login
         LanguageLabel.text = String(gistCaptured.files[keyFile]!.language)
-        GistTextContent.text = String(gistCaptured.files[keyFile]!.content)
+        GistTextContent.text = String((gistCaptured.files[keyFile]?.content)!)
     }
     
     //MARK: Requests

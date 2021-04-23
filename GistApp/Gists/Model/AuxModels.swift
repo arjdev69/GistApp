@@ -14,6 +14,11 @@ struct FileModel: Codable {
     var content:String;
 }
 
+struct Files: Codable {
+    var filename:String;
+    var language:String?;
+}
+
 struct UserModel: Codable {
     var id:Int;
     var login:String;
