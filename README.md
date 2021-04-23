@@ -15,3 +15,10 @@ App IOS Gist Github
 # Run App
 
 - Open terminal in root directory project -> `pod install`
+
+
+
+#TODO
+- Add comment
+- Scan QrCode(I don't have an iphone yet)
+- Loading indicator
