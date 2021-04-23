@@ -16,4 +16,10 @@ class GistRepository:NSObject {
         }
     }
     
+    func getCommentGist(_ url:String, completion:@escaping(_ data:[CommentsModel]) -> Void){
+        GistApi().getCommentGist(url) { (data) in
+            completion(data)
+        }
+    }
+    
 }
