@@ -2,7 +2,7 @@
 
 App IOS Gist Github
 
-![Results](https://github.com/arjdev69/GistApp/blob/main/results.gif?raw=true)
+![Results](https://github.com/arjdev69/GistApp/blob/develop/results.gif?raw=true)
 
 ## Stacks
 
