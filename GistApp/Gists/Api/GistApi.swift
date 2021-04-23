@@ -30,6 +30,17 @@ class GistApi:NSObject {
         }
     }
     
+    func getAllGists(completion:@escaping(_ data:[AllGistModel]) -> Void){
+        guard let url = URL(string: urlService + "public") else {return}
+        
+        let request = AF.request(url)
+        
+        request.responseDecodable(of: [AllGistModel].self) { (response) in
+            guard let gist = response.value else { print(response); return }
+            completion(gist)
+        }
+    }
+    
     func getCommentGist(_ url:String, completion:@escaping(_ data:[CommentsModel]) -> Void){
         guard let url = URL(string: url) else {return}
     

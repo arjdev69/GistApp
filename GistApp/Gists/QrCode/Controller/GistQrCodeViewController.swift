@@ -24,7 +24,7 @@ class GistQrCodeViewController: UIViewController, AVCaptureMetadataOutputObjects
     
     //MARK: Setup Layout
     func setupLayout(){
-        Utils().setColorBorderView(view: self.BoxImage, border: 2, radius: 10, #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1))
+        Utils().setColorBorderView(view: self.BoxImage, border: 2, radius: 10, #colorLiteral(red: 0.2549019754, green: 0.2745098174, blue: 0.3019607961, alpha: 1))
         Utils().setColorBorderView(view: self.ScanButton, border: 0, radius: Int(self.ScanButton.bounds.height/2))
     }
     

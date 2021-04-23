@@ -13,10 +13,10 @@ extension GistQrCodeViewController {
     
     func startCapture() -> Bool {
         
-        captureSession = AVCaptureSession()
-        
         guard let videoCaptureDevice = AVCaptureDevice.default(for: .video) else { return false }
         let videoInput: AVCaptureDeviceInput
+        
+        captureSession = AVCaptureSession()
         
         do {
             videoInput = try AVCaptureDeviceInput(device: videoCaptureDevice)

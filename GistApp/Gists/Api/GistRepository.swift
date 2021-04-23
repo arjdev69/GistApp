@@ -16,6 +16,12 @@ class GistRepository:NSObject {
         }
     }
     
+    func getAllGists(completion:@escaping(_ data:[AllGistModel]) -> Void){
+        GistApi().getAllGists() { (data) in
+            completion(data)
+        }
+    }
+    
     func getCommentGist(_ url:String, completion:@escaping(_ data:[CommentsModel]) -> Void){
         GistApi().getCommentGist(url) { (data) in
             completion(data)
