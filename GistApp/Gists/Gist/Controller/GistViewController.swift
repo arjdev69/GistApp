@@ -12,6 +12,7 @@ class GistViewController: UIViewController {
     
     
     var gistCaptured:GistModel!;
+    var comments:[CommentsModel] = [];
 
     //MARK: Outlets
     @IBOutlet weak var ScreenTitle: UILabel!
@@ -29,6 +30,8 @@ class GistViewController: UIViewController {
         
         self.ListViewComments.dataSource = self
         self.ListViewComments.delegate = self
+        
+        getListComments()
     }
     
     //MARK: Setup Layout
@@ -44,6 +47,14 @@ class GistViewController: UIViewController {
         OwnerLabel.text = gistCaptured.owner.login
         LanguageLabel.text = String(gistCaptured.files[keyFile]!.language)
         GistTextContent.text = String(gistCaptured.files[keyFile]!.content)
+    }
+    
+    //MARK: Requests
+    func getListComments(){
+        GistRepository().getCommentGist(gistCaptured.comments_url) { (data) in
+            self.comments = data
+            self.ListViewComments.reloadData()
+        }
     }
     
     //MARK: Actions

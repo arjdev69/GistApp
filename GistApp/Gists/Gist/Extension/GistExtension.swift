@@ -12,14 +12,18 @@ extension GistViewController:  UITableViewDelegate, UITableViewDataSource {
     
     //MARK: Delegates
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        10
+        comments.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = UITableViewCell(style: .default, reuseIdentifier: nil)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! CommentTableViewCell
         
-        cell.textLabel?.text = "item"
+        cell.setViewCell(comments[indexPath.row])
         
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return UIDevice.current.userInterfaceIdiom == UIUserInterfaceIdiom.phone ? 90 : 200
     }
 }

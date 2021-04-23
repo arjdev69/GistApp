@@ -16,7 +16,7 @@ struct GistModel: Decodable {
     let updated_at:String;
     let comments:Int;
     let comments_url:String;
-    let owner:OwnerModel
+    let owner:UserModel
 }
 
 struct GistList: Decodable {

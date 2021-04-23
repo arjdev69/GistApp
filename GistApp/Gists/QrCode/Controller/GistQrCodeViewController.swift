@@ -36,7 +36,7 @@ class GistQrCodeViewController: UIViewController {
     
     //MARK: Requests
     func getGistById(){
-        GistRepository().getGistById("95fcf71eb72f2ea1e3836d192c788ebc") { (data) in
+        GistRepository().getGistById("325d250596e923f6b6028576fcb684da") { (data) in
             self.navigateControllerView(dataGist: data)
         }
     }

@@ -246,13 +246,12 @@
                                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Pmu-BA-2ua" userLabel="GistContent">
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="content" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Pmu-BA-2ua" userLabel="GistContent">
                                                 <rect key="frame" x="0.0" y="254" width="394" height="150"/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="150" id="sqL-Ad-OZ4"/>
                                                 </constraints>
-                                                <mutableString key="text">{"id":"4a45620f-bfd2-45f0-a9a1-fa9ee8280112","group":"","sort_index":0,"isLocal":true,"gistCode":"","gistOwner":"060959e6-bcf2-4664-9c7e-9dbe2919e19b","lastSync":"1000-01-01T05:50:36.000Z","level":0,"callsign":"Bit","name":"bit","player_name":"","status":"Active","dead":false,"text_appearance":"","notes":"","history":"","portrait":"","cloud_portrait":"","quirks":[],"current_hp":6,"reserves":[],"orgs":[],"background":"NHP SPECIALIST","mechSkills":[2,0,0,0],"licenses":[],"skills":[{"id":"sk_pull_rank","rank":1},{"id":"sk_survive","rank":1},{"id":"sk_blow_something_up","rank":1},{"id":"sk_hack_or_fix","rank":1}],"talents":[{"id":"t_black_thumb","rank":1},{"id":"t_technophile","rank":1},{"id":"t_stormbringer","rank":1}],"core_bonuses":[],"loadout":{"id":"f8cef7d5-afbf-47fd-a202-c2c6e4d02fb1","name":"Primary","armor":[null],"weapons":[null,null],"gear":[null,null,null],"extendedWeapons":[null],"extendedGear":[null,null]},"mechs":[{"id":"e0a36246-8446-4986-b149-bbf72d9ac4a3","name":"Flaw","notes":"","gm_note":"","portrait":"","cloud_portrait":"","frame":"mf_standard_pattern_i_everest","active":false,"current_structure":4,"current_move":4,"current_hp":10,"overshield":0,"current_stress":4,"current_heat":0,"current_repairs":5,"current_overcharge":0,"current_core_energy":1,"loadouts":[{"id":"7fa451ff-de6d-4302-b43e-e23a17c4f47a","name":"Primary","systems":[{"id":"ms_pattern_b_hex_charges","uses":3,"destroyed":false,"cascading":false},{"id":"ms_pattern_a_jericho_deployable_cover","uses":0,"destroyed":false,"cascading":false},{"id":"ms_turret_drones","uses":3,"destroyed":false,"cascading":false}],"integratedSystems":[{"id":"ms_technophile_1","uses":0,"destroyed":false,"cascading":false}],"mounts":[{"mount_type":"Main","lock":false,"slots":[{"size":"Main","weapon":{"id":"mw_rocket_propelled_grenade","uses":0,"destroyed":false,"cascading":false,"loaded":true,"mod":null,"customDamageType":null,"maxUseOverride":0,"selectedProfile":0}}],"extra":[],"bonus_effects":[]},{"mount_type":"Flex","lock":false,"slots":[{"size":"Flex","weapon":{"id":"mw_missile_rack","uses":0,"destroyed":false,"cascading":false,"loaded":true,"mod":null,"customDamageType":null,"maxUseOverride":0,"selectedProfile":0}}],"extra":[{"size":"Auxiliary","weapon":{"id":"mw_missile_rack","uses":0,"destroyed":false,"cascading":false,"loaded":true,"mod":null,"customDamageType":null,"maxUseOverride":0,"selectedProfile":0}}],"bonus_effects":[]},{"mount_type":"Heavy","lock":false,"slots":[{"size":"Heavy","weapon":{"id":"mw_rocket_propelled_grenade","uses":0,"destroyed":false,"cascading":false,"loaded":true,"mod":null,"customDamageType":null,"maxUseOverride":0,"selectedProfile":0}}],"extra":[],"bonus_effects":[]}],"integratedMounts":[],"improved_armament":{"mount_type":"Flex","lock":false,"slots":[{"size":"Flex","weapon":null}],"extra":[{"size":"Auxiliary","weapon":null}],"bonus_effects":[]},"integratedWeapon":{"mount_type":"Aux","lock":false,"slots":[{"size":"Auxiliary","weapon":null}],"extra":[],"bonus_effects":[]}}],"active_loadout_index":0,"statuses":[],"conditions":[],"resistances":[],"reactions":[],"burn":0,"destroyed":false,"defeat":"","activations":1,"meltdown_imminent":false,"reactor_destroyed":false,"core_active":false,"cc_ver":"ERR"}],"counter_data":[],"custom_counters":[],"special_equipment":{"PilotArmor":[],"PilotWeapons":[],"PilotGear":[],"Frames":[],"MechWeapons":[],"WeaponMods":[],"MechSystems":[],"SystemMods":[]},"combat_history":{"moves":0,"kills":0,"damage":0,"hp_damage":0,"structure_damage":0,"overshield":0,"heat_damage":0,"reactor_damage":0,"overcharge_uses":0,"core_uses":0},"state":{"active_mech_id":"","stage":"Narrative","turn":1,"actions":2,"braced":false,"overcharged":false,"prepare":false,"bracedCooldown":false,"redundant":false,"stats":{"moves":0,"kills":0,"damage":0,"hp_damage":0,"structure_damage":0,"overshield":0,"heat_damage":0,"reactor_damage":0,"overcharge_uses":0,"core_uses":0},"deployed":[]},"brews":[]}</mutableString>
                                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -266,12 +265,94 @@
                                                         <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="7KW-ts-aMr">
+                                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="7KW-ts-aMr">
                                                         <rect key="frame" x="0.0" y="28" width="394" height="200"/>
                                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="200" id="OHk-CN-IPW"/>
                                                         </constraints>
+                                                        <prototypes>
+                                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="129" id="hV1-19-0jZ" customClass="CommentTableViewCell" customModule="GistApp" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="28" width="394" height="129"/>
+                                                                <autoresizingMask key="autoresizingMask"/>
+                                                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="hV1-19-0jZ" id="S4a-ax-t8Z">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="394" height="129"/>
+                                                                    <autoresizingMask key="autoresizingMask"/>
+                                                                    <subviews>
+                                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CTI-xQ-0r9">
+                                                                            <rect key="frame" x="0.0" y="124" width="394" height="5"/>
+                                                                            <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                            <constraints>
+                                                                                <constraint firstAttribute="height" constant="5" id="Kn7-3L-PPe"/>
+                                                                            </constraints>
+                                                                        </view>
+                                                                        <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="EX1-n3-khQ">
+                                                                            <rect key="frame" x="0.0" y="5" width="394" height="114"/>
+                                                                            <subviews>
+                                                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yVe-Ed-DRf" userLabel="BoxImage">
+                                                                                    <rect key="frame" x="0.0" y="0.0" width="394" height="114"/>
+                                                                                    <subviews>
+                                                                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="a3x-FF-k3T">
+                                                                                            <rect key="frame" x="0.0" y="0.0" width="80" height="114"/>
+                                                                                            <subviews>
+                                                                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person.crop.circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Vgz-S1-BDe">
+                                                                                                    <rect key="frame" x="0.0" y="1" width="80" height="58.666666666666671"/>
+                                                                                                    <constraints>
+                                                                                                        <constraint firstAttribute="width" constant="80" id="LnE-7C-2xH"/>
+                                                                                                        <constraint firstAttribute="height" constant="60" id="srW-Nb-0Tg"/>
+                                                                                                    </constraints>
+                                                                                                </imageView>
+                                                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="clip" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="9Yh-zC-bS8">
+                                                                                                    <rect key="frame" x="0.0" y="60" width="80" height="54"/>
+                                                                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                                                    <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                                    <nil key="highlightedColor"/>
+                                                                                                </label>
+                                                                                            </subviews>
+                                                                                        </stackView>
+                                                                                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="LtI-Kv-ekK">
+                                                                                            <rect key="frame" x="88" y="0.0" width="306" height="114"/>
+                                                                                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                                                            <constraints>
+                                                                                                <constraint firstAttribute="width" constant="306" id="aKw-ht-XHz"/>
+                                                                                            </constraints>
+                                                                                            <mutableString key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</mutableString>
+                                                                                            <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                            <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="14"/>
+                                                                                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                                                        </textView>
+                                                                                    </subviews>
+                                                                                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                                                    <constraints>
+                                                                                        <constraint firstAttribute="bottom" secondItem="a3x-FF-k3T" secondAttribute="bottom" id="843-3e-zAR"/>
+                                                                                        <constraint firstItem="a3x-FF-k3T" firstAttribute="top" secondItem="yVe-Ed-DRf" secondAttribute="top" id="AD0-kU-BN7"/>
+                                                                                        <constraint firstItem="LtI-Kv-ekK" firstAttribute="leading" secondItem="a3x-FF-k3T" secondAttribute="trailing" constant="8" id="BTp-sa-qt9"/>
+                                                                                        <constraint firstAttribute="trailing" secondItem="LtI-Kv-ekK" secondAttribute="trailing" id="Hqf-7K-b5j"/>
+                                                                                        <constraint firstItem="a3x-FF-k3T" firstAttribute="leading" secondItem="yVe-Ed-DRf" secondAttribute="leading" id="Wad-BA-NHP"/>
+                                                                                        <constraint firstItem="LtI-Kv-ekK" firstAttribute="top" secondItem="yVe-Ed-DRf" secondAttribute="top" id="bRB-3U-jLj"/>
+                                                                                        <constraint firstAttribute="bottom" secondItem="LtI-Kv-ekK" secondAttribute="bottom" id="oqz-uM-2dK"/>
+                                                                                    </constraints>
+                                                                                </view>
+                                                                            </subviews>
+                                                                        </stackView>
+                                                                    </subviews>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="trailing" secondItem="EX1-n3-khQ" secondAttribute="trailing" id="2Yi-LZ-5kf"/>
+                                                                        <constraint firstItem="EX1-n3-khQ" firstAttribute="leading" secondItem="S4a-ax-t8Z" secondAttribute="leading" id="3CE-mE-Xli"/>
+                                                                        <constraint firstAttribute="trailing" secondItem="CTI-xQ-0r9" secondAttribute="trailing" id="BrS-77-Gq3"/>
+                                                                        <constraint firstAttribute="bottom" secondItem="CTI-xQ-0r9" secondAttribute="bottom" id="mWE-J7-Zhw"/>
+                                                                        <constraint firstItem="CTI-xQ-0r9" firstAttribute="leading" secondItem="S4a-ax-t8Z" secondAttribute="leading" id="qHL-xA-9Xo"/>
+                                                                        <constraint firstAttribute="bottom" secondItem="EX1-n3-khQ" secondAttribute="bottom" constant="10" id="r9D-zF-tRH"/>
+                                                                        <constraint firstItem="EX1-n3-khQ" firstAttribute="top" secondItem="S4a-ax-t8Z" secondAttribute="top" constant="5" id="rlg-2n-4fN"/>
+                                                                    </constraints>
+                                                                </tableViewCellContentView>
+                                                                <connections>
+                                                                    <outlet property="authorName" destination="9Yh-zC-bS8" id="Iqo-fv-wG9"/>
+                                                                    <outlet property="avatarUser" destination="Vgz-S1-BDe" id="Tq2-As-Qd0"/>
+                                                                    <outlet property="textViewComment" destination="LtI-Kv-ekK" id="9j1-1I-nfb"/>
+                                                                </connections>
+                                                            </tableViewCell>
+                                                        </prototypes>
                                                     </tableView>
                                                 </subviews>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -401,6 +482,7 @@
     <resources>
         <image name="clear" catalog="system" width="64" height="56"/>
         <image name="list.dash" catalog="system" width="64" height="42"/>
+        <image name="person.crop.circle" catalog="system" width="64" height="60"/>
         <image name="qrcode" catalog="system" width="64" height="56"/>
     </resources>
 </document>

@@ -16,6 +16,8 @@
 		D14420EB262FC3CD00E56196 /* GistModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D14420EA262FC3CD00E56196 /* GistModel.swift */; };
 		D14420ED262FCAFC00E56196 /* GistRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = D14420EC262FCAFC00E56196 /* GistRepository.swift */; };
 		D14420EF262FD17100E56196 /* AuxModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = D14420EE262FD17100E56196 /* AuxModels.swift */; };
+		D14664222631E5D1008BE762 /* CommentsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D14664212631E5D1008BE762 /* CommentsModel.swift */; };
+		D14664242632327D008BE762 /* CommentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D14664232632327D008BE762 /* CommentTableViewCell.swift */; };
 		D14A0BD0263116D4003CA255 /* GistExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D14A0BCF263116D4003CA255 /* GistExtension.swift */; };
 		D18A002B262FACB200576DF7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D18A002A262FACB200576DF7 /* AppDelegate.swift */; };
 		D18A002D262FACB200576DF7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D18A002C262FACB200576DF7 /* SceneDelegate.swift */; };
@@ -61,6 +63,8 @@
 		D14420EA262FC3CD00E56196 /* GistModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GistModel.swift; sourceTree = "<group>"; };
 		D14420EC262FCAFC00E56196 /* GistRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GistRepository.swift; sourceTree = "<group>"; };
 		D14420EE262FD17100E56196 /* AuxModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuxModels.swift; sourceTree = "<group>"; };
+		D14664212631E5D1008BE762 /* CommentsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsModel.swift; sourceTree = "<group>"; };
+		D14664232632327D008BE762 /* CommentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CommentTableViewCell.swift; path = GistApp/Gists/Api/CommentTableViewCell.swift; sourceTree = SOURCE_ROOT; };
 		D14A0BCF263116D4003CA255 /* GistExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GistExtension.swift; sourceTree = "<group>"; };
 		D18A0027262FACB200576DF7 /* GistApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GistApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D18A002A262FACB200576DF7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -151,6 +155,7 @@
 		D13D0D192630AA70001A93C6 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				D14664232632327D008BE762 /* CommentTableViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -255,6 +260,7 @@
 			children = (
 				D14420EA262FC3CD00E56196 /* GistModel.swift */,
 				D14420EE262FD17100E56196 /* AuxModels.swift */,
+				D14664212631E5D1008BE762 /* CommentsModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -557,6 +563,7 @@
 				D18A0074262FBE9A00576DF7 /* GistApi.swift in Sources */,
 				D13D0D1B2630AA93001A93C6 /* GistViewController.swift in Sources */,
 				D14420EF262FD17100E56196 /* AuxModels.swift in Sources */,
+				D14664222631E5D1008BE762 /* CommentsModel.swift in Sources */,
 				D18A006F262FBA5D00576DF7 /* Api.swift in Sources */,
 				D18A0035262FACB200576DF7 /* GistApp.xcdatamodeld in Sources */,
 				D14420EB262FC3CD00E56196 /* GistModel.swift in Sources */,
@@ -564,6 +571,7 @@
 				D13D0D1626309FD8001A93C6 /* Utils.swift in Sources */,
 				D14420ED262FCAFC00E56196 /* GistRepository.swift in Sources */,
 				D18A002D262FACB200576DF7 /* SceneDelegate.swift in Sources */,
+				D14664242632327D008BE762 /* CommentTableViewCell.swift in Sources */,
 				D14A0BD0263116D4003CA255 /* GistExtension.swift in Sources */,
 				D13D0D1326309B73001A93C6 /* GistQrCodeViewController.swift in Sources */,
 			);

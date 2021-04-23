@@ -28,7 +28,16 @@ class GistApi:NSObject {
             guard let gist = response.value else { print(response); return }
             completion(gist)
         }
-        
     }
     
+    func getCommentGist(_ url:String, completion:@escaping(_ data:[CommentsModel]) -> Void){
+        guard let url = URL(string: url) else {return}
+    
+        let request = AF.request(url)
+        
+        request.responseDecodable(of: [CommentsModel].self) { (response) in
+            guard let comments = response.value else { print(response); return }
+            completion(comments)
+        }
+    }
 }
