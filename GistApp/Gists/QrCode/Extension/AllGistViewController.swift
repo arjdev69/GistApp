@@ -11,7 +11,7 @@ import UIKit
 class AllGistViewController: UIViewController {
     
     var allGists:[AllGistModel] = []
-
+    
     @IBOutlet weak var GistsListView: UITableView!
     
     override func viewDidLoad() {
@@ -20,28 +20,26 @@ class AllGistViewController: UIViewController {
         
         GistsListView.dataSource = self
         GistsListView.delegate = self
+        
+        Utils().createSpinnerView(viewControl: self, timer: 1.5) {
+            print("done")
+        }
     }
     
-    //MARK: Reuqests
+    //MARK: Requests
     func getAllGists(){
-        GistRepository().getAllGists { (data) in
+        GistRepository().getAllGists(count:10) { (data) in
             self.allGists = data
             self.GistsListView.reloadData()
         }
     }
     
-    func getGistById(id:String){
-        GistRepository().getGistById(id) { (data) in
-            self.navigateControllerView(dataGist: data)
-        }
-    }
-    
     //MARK: Navigation
-    func navigateControllerView(dataGist:GistModel){
+    func navigateControllerView(idGist:String){
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let controller = storyboard.instantiateViewController(withIdentifier: "GistView") as! GistViewController
         
-        controller.gistCaptured = dataGist
+        controller.idGist = idGist
         
         self.navigationController?.pushViewController(controller, animated: true)
     }

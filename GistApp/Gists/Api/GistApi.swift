@@ -20,7 +20,7 @@ class GistApi:NSObject {
     }()
     
     func getGistById(_ id:String, completion:@escaping(_ data:GistModel) -> Void){
-        guard let url = URL(string: urlService + "\(id)") else {return}
+        guard let url = URL(string: urlService + "/\(id)") else {return}
         
         let request = AF.request(url)
         
@@ -30,8 +30,8 @@ class GistApi:NSObject {
         }
     }
     
-    func getAllGists(completion:@escaping(_ data:[AllGistModel]) -> Void){
-        guard let url = URL(string: urlService + "public") else {return}
+    func getAllGists(count:Int, completion:@escaping(_ data:[AllGistModel]) -> Void){
+        guard let url = URL(string: urlService + "?per_page=\(count)") else {return}
         
         let request = AF.request(url)
         

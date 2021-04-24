@@ -29,20 +29,18 @@ class GistQrCodeViewController: UIViewController, AVCaptureMetadataOutputObjects
     }
     
     //MARK: NavigationGist
-    func navigateControllerView(dataGist:GistModel){
+    func navigateControllerView(id:String){
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let controller = storyboard.instantiateViewController(withIdentifier: "GistView") as! GistViewController
         
-        controller.gistCaptured = dataGist
+        controller.idGist = id
         
         self.navigationController?.pushViewController(controller, animated: true)
     }
     
     //MARK: Requests
     func getGistById(){
-        GistRepository().getGistById("325d250596e923f6b6028576fcb684da") { (data) in
-            self.navigateControllerView(dataGist: data)
-        }
+        self.navigateControllerView(id: "325d250596e923f6b6028576fcb684da")
     }
     
     //MARK: Actions

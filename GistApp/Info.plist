@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>urlService</key>
-	<string>https://api.github.com/gists/</string>
+	<string>https://api.github.com/gists</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleExecutable</key>

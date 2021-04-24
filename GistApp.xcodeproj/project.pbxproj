@@ -10,6 +10,7 @@
 		0917733C5C1F1D5999D1C8BD /* Pods_GistAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F0B4C96AB7B54D49EFA8EC0 /* Pods_GistAppTests.framework */; };
 		2B782BCFD7A8FB4C566C9B23 /* Pods_GistApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FBB02D1A86C4C76F77249FA /* Pods_GistApp.framework */; };
 		528E855873CE95E5463ED094 /* Pods_GistApp_GistAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13AF0E3C77A3D2F1B34951EA /* Pods_GistApp_GistAppUITests.framework */; };
+		D1026EFB2634586600D2F546 /* SpinnerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1026EFA2634586600D2F546 /* SpinnerViewController.swift */; };
 		D13D0D1326309B73001A93C6 /* GistQrCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D13D0D1226309B73001A93C6 /* GistQrCodeViewController.swift */; };
 		D13D0D1626309FD8001A93C6 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = D13D0D1526309FD8001A93C6 /* Utils.swift */; };
 		D13D0D1B2630AA93001A93C6 /* GistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D13D0D1A2630AA93001A93C6 /* GistViewController.swift */; };
@@ -61,6 +62,7 @@
 		7FBB02D1A86C4C76F77249FA /* Pods_GistApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GistApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		85F6D1CAEAD9D2EC1BACD92A /* Pods-GistApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GistApp.debug.xcconfig"; path = "Target Support Files/Pods-GistApp/Pods-GistApp.debug.xcconfig"; sourceTree = "<group>"; };
 		CACA9AC37F1D4DEE98792120 /* Pods-GistAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GistAppTests.release.xcconfig"; path = "Target Support Files/Pods-GistAppTests/Pods-GistAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		D1026EFA2634586600D2F546 /* SpinnerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpinnerViewController.swift; sourceTree = "<group>"; };
 		D13D0D1226309B73001A93C6 /* GistQrCodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GistQrCodeViewController.swift; sourceTree = "<group>"; };
 		D13D0D1526309FD8001A93C6 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		D13D0D1A2630AA93001A93C6 /* GistViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GistViewController.swift; sourceTree = "<group>"; };
@@ -132,6 +134,22 @@
 				CACA9AC37F1D4DEE98792120 /* Pods-GistAppTests.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		D1026EF82634583100D2F546 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				D1026EF92634583900D2F546 /* Spinner */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		D1026EF92634583900D2F546 /* Spinner */ = {
+			isa = PBXGroup;
+			children = (
+				D1026EFA2634586600D2F546 /* SpinnerViewController.swift */,
+			);
+			path = Spinner;
 			sourceTree = "<group>";
 		};
 		D13D0D1426309FB2001A93C6 /* Utils */ = {
@@ -217,6 +235,7 @@
 		D18A0029262FACB200576DF7 /* GistApp */ = {
 			isa = PBXGroup;
 			children = (
+				D1026EF82634583100D2F546 /* Components */,
 				D13D0D1426309FB2001A93C6 /* Utils */,
 				D18A006D262FBA2900576DF7 /* Services */,
 				D18A0060262FB86600576DF7 /* Gists */,
@@ -594,6 +613,7 @@
 				D14420EF262FD17100E56196 /* AuxModels.swift in Sources */,
 				D14664222631E5D1008BE762 /* CommentsModel.swift in Sources */,
 				D17C303B2632D2B200167D73 /* AllGistViewController.swift in Sources */,
+				D1026EFB2634586600D2F546 /* SpinnerViewController.swift in Sources */,
 				D18A006F262FBA5D00576DF7 /* Api.swift in Sources */,
 				D18A0035262FACB200576DF7 /* GistApp.xcdatamodeld in Sources */,
 				D14420EB262FC3CD00E56196 /* GistModel.swift in Sources */,

@@ -13,6 +13,7 @@ class GistViewController: UIViewController {
     
     var gistCaptured:GistModel!;
     var comments:[CommentsModel] = [];
+    var idGist:String = ""
 
     //MARK: Outlets
     @IBOutlet weak var ScreenTitle: UILabel!
@@ -26,18 +27,21 @@ class GistViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupLayout()
-        setLabelsView()
-        
+
         self.ListViewComments.dataSource = self
         self.ListViewComments.delegate = self
         
-        getListComments()
+        getGistById(id: idGist) {
+            self.setLabelsView()
+            self.getListComments()
+        }
     }
     
     //MARK: Setup Layout
     func setupLayout(){
         Utils().setColorBorderView(view: self.CloseViewButton, border: 0, radius: Int(self.CloseViewButton.bounds.height/2))
         Utils().setColorBorderView(view: self.BoxLabels, border: 0, radius: 10)
+        Utils().createSpinnerView(viewControl: self, timer: 1.0, {})
     }
     
     func setLabelsView(){
@@ -54,6 +58,13 @@ class GistViewController: UIViewController {
         GistRepository().getCommentGist(gistCaptured.comments_url) { (data) in
             self.comments = data
             self.ListViewComments.reloadData()
+        }
+    }
+    
+    func getGistById(id:String, _ completion:@escaping() -> Void){
+        GistRepository().getGistById(id) { (data) in
+            self.gistCaptured = data
+            completion()
         }
     }
     

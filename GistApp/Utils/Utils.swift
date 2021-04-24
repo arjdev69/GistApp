@@ -8,8 +8,9 @@
 
 import UIKit
 
-class Utils: NSObject {
-    public override init() {}
+class Utils {
+    
+    let child = SpinnerViewController()
     
     // MARK: - LAYOUT
     func roundCorners(with CACornerMask: CACornerMask, radius: CGFloat, view: UIView) {
@@ -36,6 +37,32 @@ class Utils: NSObject {
         let imageUrl = URL(string: url)!
         let imageData = try! Data(contentsOf: imageUrl)
         image.image = UIImage(data: imageData)
+    }
+    
+    //MARK: Helpers
+    func createSpinnerView(viewControl:UIViewController, timer:Double, _ completion:@escaping() -> Void) {
+        // add the spinner view controller
+        startSpinnerView(viewControl: viewControl)
+
+        // wait two seconds to simulate some work happening
+        DispatchQueue.main.asyncAfter(deadline: .now() + timer) {
+            self.doneSpinnerView()
+            completion()
+        }
+    }
+    
+    func startSpinnerView(viewControl:UIViewController){
+        viewControl.addChild(child)
+        self.child.view.frame = viewControl.view.frame
+        viewControl.view.addSubview(self.child.view)
+        self.child.didMove(toParent: viewControl)
+    }
+    
+    func doneSpinnerView(){
+        //self.child.willMove(toParent: nil)
+        //self.child.view.removeFromSuperview()
+        //self.child.removeFromParent()
+        self.child.breakSpinner()
     }
 
 }

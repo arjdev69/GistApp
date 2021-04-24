@@ -24,7 +24,7 @@ extension AllGistViewController:  UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        getGistById(id: allGists[indexPath.row].id)
+        self.navigateControllerView(idGist: self.allGists[indexPath.row].id)
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {

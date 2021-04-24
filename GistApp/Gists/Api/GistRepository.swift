@@ -16,8 +16,8 @@ class GistRepository:NSObject {
         }
     }
     
-    func getAllGists(completion:@escaping(_ data:[AllGistModel]) -> Void){
-        GistApi().getAllGists() { (data) in
+    func getAllGists(count:Int, completion:@escaping(_ data:[AllGistModel]) -> Void){
+        GistApi().getAllGists(count: 10) { (data) in
             completion(data)
         }
     }
